@@ -6,72 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
     <header>
-
-        <nav class="uno">
-            <img class="logo" src="images/logo.png">
-        <div class="barre">         
-            <div class="t1">N'importe ou</div>
-            <div class="t2">Une semaine</div>
-            <input placeholder="Ajouter des voyageurs"></input>
-            <div class="search">
-                <div class="rond">
-                    <a href="https://www.airbnb.fr/">
-                <img class="phto" src="/images/search.png">
-                    </a>
-                </div>
-            </div>
+        
+        <nav class="navbar navbar-expand-lg bg-white uno">
+         <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <img class="logo" src="images/logo.png" width="100" height="40">
+                <div class="separator row col-3"></div>
+              <a class="navbar-brand" href="#">N'importe où</a>
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Une semaine</a>
+                </li>
+              </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control d-flex align-item-center" type="search" placeholder="Ajouter des voyageurs" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
         </div>
-        <div class="barreD">
-        <h1> Devenez hôte</h1>
-        <img class="phto2" src="images/internet.png" alt="planete">
-        <div class="profil"><img src="/images/profil.png" alt="iconProfil"></div> <!--Menu Burger-->
+        </div>
+        <div class="nav navbar-brand">
+        <h5> Devenez hôte</h5>
+    </div>
+        <img class="phto2" src="images/internet.png" alt="planete" width="20" height="20">
+        <div class="profil">
+            <img src="/images/profil.png" alt="iconProfil">
+        </div> <!--Menu Burger a faire-->
     </div>
         </nav>
         <nav class="dos">
-            <img class="imgdos" src="images/i1.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i2.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i3.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i4.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i5.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i6.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i7.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i8.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i9.jpg" alt="nav2" >
-            <img class="imgdos" src="images/i10.jpg" alt="nav2">
-            <img class="imgdos" src="images/i11.jpg" alt="nav2">
-            <img class="imgdos" src="images/i12.jpg" alt="nav2">
+            <img class="imgdos d-inline-flex p-2" src="images/i1.jpg" alt="nav2"  width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i2.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i3.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i4.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i5.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i6.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i7.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i8.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i9.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i10.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i11.jpg" alt="nav2" width="50" height="50">
+            <img class="imgdos d-inline-flex p-2" src="images/i12.jpg" alt="nav2" width="50" height="50">
             <button class="btndos">Filtre</button> 
         </nav>
     </header>
 
-    <div class="menu">
-    <div class="card">
-        <img src="images/image1.png" alt="Avatar" style="width: 100%;">
+    <div class="menu row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">  
+            <div class="card">
+                <img class="card-img-top image" src="images/image1.png" alt="Avatar" style="width: 100%;">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+        </div>
+    <div class="col">
+        <div class="card">
+        <img class="card-img-top image" src="images/image2.png" alt="Avatar" style="width: 100%;">
         <div class="container">
           <h4><b>John Doe</b></h4>
           <p>Architect & Engineer</p>
+        </div>
     </div>
+</div>
+<div class="col">
     <div class="card">
-        <img src="images/image2.png" alt="Avatar" style="width: 100%;">
+        <img class="card-img-top image" src="images/image3.png" alt="Avatar" style="width: 100%;">
         <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+        </div>
     </div>
+</div>
+<div class="col">    
     <div class="card">
-        <img src="images/image3.png" alt="Avatar" style="width: 100%;">
+        <img class="card-img-top image" src="images/image4.png" alt="Avatar" style="width: 100%;">
         <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
+            <h4><b>John Doe</b></h4>
+            <p>Architect & Engineer</p>
+        </div>
     </div>
-    <div class="card">
-        <img src="images/image4.png" alt="Avatar" style="width: 100%;">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-    </div>
+</div>
+    
 </div>
     <footer>
         <li>Lien1</li>
@@ -85,5 +108,8 @@
         <p><img src="ieur" alt="eurfooter">EUR</p>
         <p>Assistance et ressources<img src="iassist" alt="flechefooter"></p>
     </footer>
+
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 </body>
 </html>
